@@ -1,0 +1,14 @@
+{% set page = 'index' %}
+{% extends "src/templates/base.html" %}
+
+{% block content %}
+  {% include "src/templates/includes/header.html" %}
+
+  <main class="l-page__content">
+    <div class="h-container">
+      <h1>Home</h1>
+    </div>
+  </main>
+
+  {% include "src/templates/includes/footer.html" %}
+{% endblock %}
