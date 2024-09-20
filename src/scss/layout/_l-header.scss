@@ -1,3 +1,42 @@
 .l-header {
+  width: 100%;
+  background: var(--c-primary);
 
+  &--fixed-mobile {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+
+    @include respond($bp-large) {
+      position: static;
+      z-index: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hamburger {
+    margin-left: auto;
+  }
+
+  &__nav {
+    margin-left: 5rem;
+    flex: 1;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
 }

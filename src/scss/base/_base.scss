@@ -23,7 +23,7 @@ body {
  * Basic styles for links
  */
 a {
-  color: var(--c-primary);
+  color: var(--c-white);
   text-decoration: none;
 
   @include on-event {

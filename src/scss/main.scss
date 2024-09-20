@@ -25,7 +25,10 @@
 
 // 5. Components
 @import
-  'components/c-btn';
+  'components/c-btn',
+  'components/c-hamburger',
+  'components/c-header-nav',
+  'components/c-sidenav';
 
 // 6. Page-specific styles
 @import
