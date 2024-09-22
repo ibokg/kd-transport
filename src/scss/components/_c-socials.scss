@@ -1,0 +1,13 @@
+.c-socials {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  &__link {
+    transition: color .2s;
+
+    &:hover {
+      color: var(--c-yellow);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.c-full-bg {
+  position: relative;
+  $this: &;
+
+  &__block {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__block-wrapper {
+    @include respond($bp-large) {
+      max-width: 48rem;
+    }
+  }
+
+  &__bg {
+    display: block;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    min-height: 26rem;
+
+    @include respond($bp-large) {
+      background-size: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      min-height: auto;
+    }
+  }
+
+  &--right {
+    #{$this}__bg {
+      margin-left: 0;
+    }
+
+    #{$this}__block-wrapper {
+      margin-left: auto;
+    }
+  }
+}

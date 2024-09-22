@@ -14,6 +14,7 @@
     "vite-plugin-nunjucks": "^0.2.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "sanitize.css": "^13.0.0"
   }
 }

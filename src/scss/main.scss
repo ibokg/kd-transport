@@ -8,7 +8,8 @@
 
 // 2. Vendors
 @import
-  'sanitize.css';
+  'sanitize.css',
+  '@splidejs/splide/css';
 
 // 3. Base stuff
 @import
@@ -26,9 +27,13 @@
 // 5. Components
 @import
   'components/c-btn',
+  'components/c-card',
+  'components/c-contacts',
+  'components/c-full-bg',
   'components/c-hamburger',
   'components/c-header-nav',
-  'components/c-sidenav';
+  'components/c-sidenav',
+  'components/c-socials';
 
 // 6. Page-specific styles
 @import
