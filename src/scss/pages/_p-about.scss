@@ -1,0 +1,33 @@
+.p-about {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+
+  @include respond($bp-large) {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+
+    @include respond($bp-large) {
+      flex-direction: row-reverse;
+      gap: 6rem;
+    }
+  }
+
+  &__main {
+    flex: 1;
+  }
+
+  &__img {
+    object-fit: cover;
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
