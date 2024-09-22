@@ -1,0 +1,50 @@
+.p-services {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+
+  @include respond($bp-large) {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  
+  &__content {
+    margin-bottom: 3rem;
+
+    @include respond($bp-large) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__cards {
+    @include respond($bp-large) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    &:nth-child(1) { grid-column: span 2 / span 2;}
+    &:nth-child(2) { grid-row-start: 2; }
+    &:nth-child(3) { grid-row-start: 2; }
+    &:nth-child(5) { grid-row-start: 3; }
+    &:nth-child(7) { grid-row-start: 4; }
+  }
+
+  &__card-title {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    li {
+      &::before {
+        content: "\2022";
+        margin-right: 1rem;
+      }
+    }
+  }
+}
