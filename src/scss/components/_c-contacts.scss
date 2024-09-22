@@ -1,4 +1,6 @@
 .c-contacts {
+  height: 100%;
+
   @include respond($bp-large) {
     display: flex;
   }
