@@ -121,6 +121,7 @@
 
 .p-index-features {
   padding-bottom: 4rem;
+  $this: &;
 
   @include respond($bp-large) {
     padding-bottom: 8rem;
@@ -156,6 +157,10 @@
         background: var(--c-primary);
         color: var(--c-white);
       }
+
+      &:hover #{$this}__title {
+        color: var(--c-primary);
+      }
     }
   }
 
@@ -164,11 +169,11 @@
   }
 }
 
-.asdasd {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  clip-path: polygon(41% 0, 100% 0, 100% 100%, 0% 100%)
-}
+// .trapezoid {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 50%;
+//   clip-path: polygon(41% 0, 100% 0, 100% 100%, 0% 100%)
+// }
